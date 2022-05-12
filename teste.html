@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <style>
+        #texto {
+  
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 100%;
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Signika', sans-serif;
+}
+#texto2 {
+  
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 100%;
+  font-family: 'Open Sans', sans-serif;
+font-family: 'Signika', sans-serif;
+}
+
+        p {
+    color: #fcef95;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 14px;
+    font-family: "Open Sans",sans-serif; 
+}
+       
+        body{
+  background-color: #92c8ab;
+  text-align:center
+}
+
+
+.img {
+  float: left;
+}
+
+#logo1 ,#logo3,#logo5,#logo7{
+  display: flex;
+  justify-content: stretch;
+}
+#logo2 ,#logo4,#logo6{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+        </style>
+  <meta charset="UTF-8"  name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Signika:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+      <h1 id="texto">Projeto de Vida!!</h1>
+      <h2 id="texto2"t>Meu plano de ação</h2>
+    
+      <div id="logo1" style="margin-left: 1%; background-color: #4b5ba7 ;width:85%;height: auto; " >
+        <img src="image11.png" alt="something" height="auto" width="200" />
+        <p id="myspan1"  height="90%" style=" text-align:center;"></p>
+        </div>
+      </br>
+    
+      <div id="logo2" style="margin-left: 5%; background-color: #4b5ba7 ;width:85%;height: auto;  " >
+       
+        <p id="myspan2" height="90%"></p>
+        <img src="image22.png" alt="something" height="auto" width="200"/>
+        </div>
+      </br>
+      
+      <div id="logo3" style="margin-left: 1%; background-color: #4b5ba7 ;width:85%;height: auto;  " >
+        <img src="image33.png" alt="something" height="auto" width="200"/>
+        <p id="myspan3" height="90%"></p>
+        </div>
+      </br>
+ 
+      <div id="logo4" style="margin-left: 5%; background-color: #4b5ba7 ;width:85%;height: auto;  " >
+       
+        <p id="myspan4" height="90%"></p>
+        <img src="image44.png" alt="something" height="auto" width="200"/>
+        </div>
+      </br>
+      
+      <div id="logo5" style="margin-left: 1%; background-color: #4b5ba7 ;width:85%;height: auto;  " >
+        <img src="image55.png" alt="something"height="auto" width="200"/>
+        <p id="myspan5" height="90%"></p>
+        </div>
+      </br>
+       
+      <div id="logo6" style="margin-left: 5%; background-color: #4b5ba7 ;width:85%;height: auto;  " >
+        
+        <p id="myspan6" height="90%"></p>
+        <img src="image66.png" alt="something" height="auto" width="200"/>
+        </div>
+      </br>
+      
+      <div id="logo7" style="margin-left: 1%; background-color: #4b5ba7 ;width:85%;height: auto;  " >
+        <img src="image77.png" alt="something"height="auto" width="200"/>
+        <p id="myspan7" height="90%"></p>
+        </div>
+      </br>
+
+    </br>
+    
+    
+    <script type="text/javascript">
+      var resposta1x = localStorage.getItem("resposta1");
+      var resposta2x = localStorage.getItem("resposta2");
+      var resposta3x = localStorage.getItem("resposta3");
+      var resposta4x = localStorage.getItem("resposta4");
+      var resposta5x = localStorage.getItem("resposta5");
+      var resposta6x = localStorage.getItem("resposta6");
+      var resposta7x = localStorage.getItem("resposta7");
+      document.getElementById('myspan1').innerHTML = resposta1x;
+      document.getElementById('myspan2').innerHTML = resposta2x;
+      document.getElementById('myspan3').innerHTML = resposta3x;
+      document.getElementById('myspan4').innerHTML = resposta4x;
+      document.getElementById('myspan5').innerHTML = resposta5x;
+      document.getElementById('myspan6').innerHTML = resposta6x;
+      document.getElementById('myspan7').innerHTML = resposta7x;
+
+    </script>
+</body>
+</html>

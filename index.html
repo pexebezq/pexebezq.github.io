@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <style>
+         #texto {
+  
+  font-size: 50px;
+  font-weight: bold;
+
+  line-height: 100%;
+  font-family: 'Open Sans', sans-serif;
+font-family: 'Signika', sans-serif;
+}
+        h2 {
+    border: 0;
+    background: none;
+    font-size: 24px;
+    font-weight: 700;
+   /*  padding: 10px 0; */
+    line-height: 150%;
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Signika', sans-serif;
+}
+        p {
+    color: #fcef95;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 20px;
+    transition: all .5s ease;
+    font-family: "Open Sans",sans-serif; 
+}
+        textarea {
+          resize: none;
+          max-width:95%;
+          font-family: "Open Sans",sans-serif; 
+        }
+        body{
+  background-color: #92c8ab;
+  text-align:center
+}
+input[type=submit] {
+  background-color: #4b5ba7; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+font-family: 'Signika', sans-serif;
+}
+        </style>
+  <meta charset="UTF-8"  name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Signika:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <script>
+  
+    function getDados()
+{
+    //gettting the values
+    var resposta1 = document.getElementById("resposta1").value;
+    var resposta2= document.getElementById("resposta2").value; 
+    var resposta3= document.getElementById("resposta3").value; 
+    var resposta4= document.getElementById("resposta4").value; 
+    var resposta5= document.getElementById("resposta5").value;
+    var resposta6= document.getElementById("resposta6").value;
+    var resposta7= document.getElementById("resposta7").value;
+    //saving the values in local storage
+    localStorage.setItem("resposta1", resposta1);
+    localStorage.setItem("resposta2", resposta2);
+    localStorage.setItem("resposta3", resposta3);
+    localStorage.setItem("resposta4", resposta4);  
+    localStorage.setItem("resposta5", resposta5);
+    localStorage.setItem("resposta6", resposta6);
+    localStorage.setItem("resposta7", resposta7); 
+}
+
+    </script>
+    <h1 id="texto"t>Produto final: e-book ou app</h1>
+<form action="teste.html" method="post">
+    <h2>ERA UMA VEZ...
+    <p> Quem é você, quais suas principais características, se apresente:  </p></h2>
+        <textarea  name="resposta1" id="resposta1" cols="70"  rows="4" required minlength="30"  ></textarea>
+        <h2>ATÉ QUE UM DIA...
+        <p>(Conte sobre as atividades que realizou, estudos, reflexões que fez para pensar em seu projeto de vida)</p></h2>
+        <textarea  name="resposta2"  id="resposta2"  cols="70" rows="4" required minlength="30"></textarea>
+        <h2>E POR CAUSA DISSO COMECEI A PENSAR EM SEUS SONHOS</h2>
+        <p>(Conte onde quer chegar, o que pretende alcançar, suas metas)</p>
+        <textarea  name="resposta3"    id="resposta3"cols="70" rows="4" required minlength="30"></textarea>
+        <h2>RECONHECENDO</h2>
+        <p>(Descreva seu contexto, suas condições, facilidades e desafios para alcançar seus sonhos e suas metas)</p>
+        <textarea  name="resposta4"  id="resposta4" cols="70" rows="4" required minlength="30"></textarea>
+        <h2>COMO CHEGAR LÁ...</h2>
+        <p>(Quais estratégias usará, quem será sua rede de apoio)</p>
+        <textarea  name="resposta5"  id="resposta5" cols="70" rows="4" required minlength="30" ></textarea>
+        <h2>REALIZANDO...</h2>
+        <p>(Quais serão suas ações, como fará, o que será necessário)</p>
+        <textarea  name="resposta6"  id="resposta6" cols="70" rows="4" required minlength="30"></textarea>
+        <h2>REFLETINDO...</h2>
+        <p> Como foi esse processo para você? O que aprendeu?</p>
+        <textarea  name="resposta7"  id="resposta7" cols="70" rows="4" required minlength="30"></textarea>
+        <br></br>
+        <input type="submit" id="button" value="Enviar" onclick="getDados()">
+</form>
+
+</body>
+</html>
